@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لیست تراکنش ها</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="search-container" id="searchContainer">
+        <i class="fas fa-search search-icon" id="searchIcon"></i>
+        <input type="text" id="searchInput" placeholder="جستجوی تراکنش  ..." />
+      </div>
+      <h1>لیست تراکنش ها</h1>
+      <button id="loadTransactionsButton">بارگذاری تراکنش ها</button>
+      <div id="transactionsContainer"></div>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

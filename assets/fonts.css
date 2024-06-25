@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "vazir";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/Vazirmatn[wght].woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "vazir-bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/assets/Fonts/Vazirmatn-Bold.woff2") format("woff2");
+}
+
+body,button{
+  font-family: "vazir";
+}
+

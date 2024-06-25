@@ -1,0 +1,181 @@
+ /* Reset  */
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ html {
+   font-size: 62.5%;
+   
+ }
+
+ body {
+   font-family: "vazir";
+   background-color: hwb(0 100% 0%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   font-size: 16px;
+ }
+ h1 {
+   font-size: 2.06rem;
+   font-weight: 800;
+   line-height: 46.5px;
+   text-align: right;
+ }
+
+ .container {
+   width: 100%;
+   max-width: 950px;
+   text-align: center;
+   color: #878787;
+ }
+
+ .search-container {
+   display: none;
+   justify-content: left;
+   margin-bottom: 20px;
+   position: relative; /* Add this line */
+ }
+
+ .search-container input {
+   padding: 8px 12px 8px 40px;
+   font-size: 1rem;
+   border: 1px solid #e2dbdb;
+   border-radius: 15px;
+   text-align: right;
+   direction: rtl;
+   width: 300px;
+ }
+
+ .search-container .search-icon {
+   position: absolute;
+   left: 12px;
+   top: 50%;
+   transform: translateY(-50%);
+   /color: #888;
+   font-size: 18px;
+ }
+
+ button {
+   background-color: #009baf;
+   padding: 12px 24px;
+   border: none;
+   cursor: pointer;
+   font-size: 3rem;
+   width: 608px;
+   height: 112px;
+   top: 414px;
+   left: 656px;
+   gap: 0px;
+   border-radius: 28px;
+   opacity: 0px;
+ }
+
+ button:hover {
+   background-color: #455da0;
+ }
+ i:hover {
+   cursor: pointer;
+ }
+
+ table tr:first-child {
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: #878787;
+   line-height: 21px;
+   background: #f7f8fa;
+   /* width: 1066px;
+   height: 50px;
+   top: 369px;
+   left: 427px; */
+   gap: 0px;
+   border-radius: 10px 10px 0px 0px;
+   /* opacity: 0px; */
+   border: 1px solid #b7b4b4;
+ }
+ table {
+   width: 100%;
+   font-size: 1rem;
+   border-collapse: collapse;
+   border-radius: 10px;
+   overflow: hidden;
+   border: 1px solid #b7b4b4;
+   /* border-right: 1px solid #ececec;
+   border-top: 1px solid #ececec;
+   border-bottom: 1px solid #ececec; */
+ }
+
+ th,
+ td {
+   padding: 12px;
+   text-align: center;
+   border-top: none;
+   border-bottom: 1px solid #ececec;
+   border-left: none;
+   border-right: none;
+ }
+
+ th {
+   background-color: #7e7b7b;
+   color: white;
+ }
+
+ table tbody tr:last-child td {
+   border-bottom: none;
+ }
+
+ .sort-icon {
+   display: inline-block;
+   width: 0px;
+   height: 0px;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-bottom: 8px solid #888;
+   margin-left: 5px;
+   cursor: pointer;
+   transition: transform 0.3s ease-in-out;
+ }
+
+ .sort-icon.asc {
+   transform: translateY(-100%);
+ }
+
+ .sort-icon.desc {
+   transform: translateY(0);
+ }
+
+ #transactionListText {
+   font-size: 1.12rem;
+   font-weight: bold;
+   margin-bottom: 10px;
+   text-align: right;
+ }
+
+ .transaction-type-deposit {
+   color: #acd373;
+ }
+
+ .transaction-type-withdrawal {
+   color: #ff5252;
+ }
+
+ @media (max-width: 768px) {
+   .container {
+     width: 80%;
+   }
+
+   table {
+     font-size: 12px;
+   }
+
+   th,
+   td {
+     padding: 8px;
+   }
+ }
